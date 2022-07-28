@@ -1,16 +1,15 @@
 # all_images
+An app to generate all possible image combinations.
+Hecho en 🇵🇷 por Radamés J. Valentín Reyes
 
-A new Flutter project.
+------------------------------------------------------------
+# Technical details
+- Due to the vast amount of computation required this demo generates 50x50 pixel images.
+  - This can be increased or decreased by changing the values on the veriables.dart file.
+-
+------------------------------------------------------------
+## Contribute/donate by tapping on the Pay Pal logo/image
 
-## Getting Started
+<a href="https://www.paypal.com/paypalme/onlinespawn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg"/></a>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+------------------------------------------------------------
