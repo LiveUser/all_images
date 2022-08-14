@@ -46,3 +46,36 @@ class CircularButton extends StatelessWidget {
     );
   }
 }
+
+class ShareButton extends StatelessWidget {
+  const ShareButton({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      color: Colors.black,
+      padding: const EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
+      child: Row(
+        children: const [
+          Icon(
+            Icons.share,
+            color: Colors.white,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Text(
+            "Share",
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

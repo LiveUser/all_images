@@ -1,13 +1,10 @@
-import 'dart:async';
 import 'package:binary_counter/binary_counter.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui' as Ui;
-import 'dart:typed_data';
-import 'dart:math';
 import 'widgets.dart';
 import 'variables.dart';
 import 'functions.dart';
+import 'package:quick_share/quick_share.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,15 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Expanded(
-                    child: FittedBox(
-                      fit: BoxFit.contain,
-                      child: SizedBox(
-                        width: imageWidth,
-                        height: imageHeight,
-                        child: CustomPaint(
-                          painter: MyPainter(
-                            pixels: snapshot.data as Ui.Image,
-                          ),
+                    child: QuickShareScreenshot(
+                      shareButton: const ShareButton(), 
+                      buttonPlacement: ButtonPlacement.top,
+                      child: CustomPaint(
+                        size: Size(
+                          imageWidth,
+                          imageHeight,
+                        ),
+                        painter: MyPainter(
+                          pixels: snapshot.data as Ui.Image,
                         ),
                       ),
                     ),
